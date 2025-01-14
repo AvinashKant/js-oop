@@ -1,0 +1,15 @@
+{
+  "name": "js-oop",
+  "version": "1.0.0",
+  "description": "Create your files on commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Avinash Kant <developer.avinashkant@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AvinashKant/js-oop.git"
+  }
+}
