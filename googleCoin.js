@@ -18,14 +18,14 @@ function calculateSetAndMinCoin(amount) {
                 amount = amount - denominations[i];
                 minimumCoins++;
                 setnumber.push(denominations[i])
-            }else{
+            } else {
                 i++
             }
         }
         console.log("minimumCoins = ", minimumCoins);
         console.log("Coins = ", setnumber);
     }
- 
+
 }
 
 calculateSetAndMinCoin(16);
