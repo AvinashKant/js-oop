@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,6 +62,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Tic Tac Toe</h1>
@@ -89,10 +91,10 @@
         let currentPlayer = 'X';
         let board = Array(9).fill(null);
         console.log(board);
-        
+
         function markSymbol(event) {
             const cellIndex = Number(event.id);
-            if(board[cellIndex] !== null) return;
+            if (board[cellIndex] !== null) return;
             board[cellIndex] = currentPlayer;
             event.innerText = currentPlayer;
             checkWinner();
@@ -106,10 +108,10 @@
                 [0, 4, 8], [2, 4, 6]
             ];
 
-            if(board.includes(null)) {
-                for(let i = 0; i < winningCombinations.length; i++) {
+            if (board.includes(null)) {
+                for (let i = 0; i < winningCombinations.length; i++) {
                     const [a, b, c] = winningCombinations[i];
-                    if(board[a] && board[a] === board[b] && board[a] === board[c]) {
+                    if (board[a] && board[a] === board[b] && board[a] === board[c]) {
                         document.getElementById(a).classList.add('winner');
                         document.getElementById(b).classList.add('winner');
                         document.getElementById(c).classList.add('winner');
@@ -120,12 +122,13 @@
             } else {
                 document.querySelector('.result').innerText = 'It\'s a tie!';
             }
-            
+
         }
-  
+
 
 
 
     </script>
 </body>
+
 </html>
