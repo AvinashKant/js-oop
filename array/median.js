@@ -23,8 +23,8 @@ var findMedianSortedArrays = function (nums1, nums2) {
     let sum2 = nums2.reduce(function (x, y) {
         return x + y;
     }, 0);
-    return ( (sum1+sum2)/(nums1.length + nums2.length));
+    return ((sum1 + sum2) / (nums1.length + nums2.length));
 };
 
-console.log(findMedianSortedArrays([1,3],[2]));
-console.log(findMedianSortedArrays([1,2],[3,4]));
+console.log(findMedianSortedArrays([1, 3], [2]));
+console.log(findMedianSortedArrays([1, 2], [3, 4]));
