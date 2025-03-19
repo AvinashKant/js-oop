@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.subSection{
+    border: 1px solid blue;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: start;
+    border: 1px solid red;
+    margin: 1px;    
+
+}
+
+.wrapper > .boxMovie {
+    max-width: 320px;
+    max-height: 100px; 
+}
