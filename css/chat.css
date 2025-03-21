@@ -1,0 +1,30 @@
+.{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.chatContainer{
+    position: absolute; 
+    right: 0px;    
+    bottom: 0;
+    width: 400px;
+}
+
+.chatContainer > .chatHeader {
+    background-color: black;
+    color: #fff;
+    min-height: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.chatWindow { 
+    background-color: bisque;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.chatContainer > .chatBottom {
+    display: flex;
+    justify-content: space-between;
+}
