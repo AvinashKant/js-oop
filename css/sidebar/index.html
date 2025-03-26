@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, distinctio tenetur labore maiores, quaerat iure porro minima quo cum aut, dolore culpa aperiam sed? Adipisci ea enim expedita quod culpa!
+    </div>
+    <div id="left-sidebar" class="sidebar">
+        
+        <div >
+            <h1>
+                I am Left sidebar
+            </h1>
+        </div>
+    </div>
+    <div id="right-sidebar" class="sidebar">
+        
+        <div >
+            <h1>
+                I am right sidebar
+            </h1>
+        </div>
+    </div>
+    <button onclick="showSidebar()">
+        Show Sidebar
+    </button>  
+    <button onclick="hideSidebar()">
+        Hide Sidebar
+    </button>    
+</body>
+<script>
+    function showSidebar()
+    {
+        document.getElementById('sidebar').style.display = 'block';
+    }
+    function hideSidebar()
+    {
+        document.getElementById('sidebar').style.display = 'none';
+    }
+</script>
+</html>

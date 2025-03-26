@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.sidebar{
+
+    position: absolute;
+    display: hidden;
+    top: 0px;
+    height: 100vh;
+    width: 10%;
+    animation: mymove 5s normal;
+}
+#left-sidebar{
+    left:0px;
+    background-color: aqua;
+    width: 95%;
+}
+#right-sidebar{
+    right:0px;
+    background-color: rgb(202, 109, 166);
+}
+
+@keyframes mymove {
+    from {right: 0px;}
+    to {right: 200px;}
+  }
