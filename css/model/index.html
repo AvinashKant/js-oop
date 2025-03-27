@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="model.css">
+</head>
+
+<body>
+    <div style="background-color: aqua;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim doloribus et id incidunt error, pariatur
+        vitae fugiat in cum, facere voluptatum odio repellendus? Blanditiis obcaecati officia omnis eos laudantium.
+    </div>
+    <div style="background-color: blue;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim doloribus et id incidunt error, pariatur
+        vitae fugiat in cum, facere voluptatum odio repellendus? Blanditiis obcaecati officia omnis eos laudantium.
+    </div>
+
+    <dialog id="firstModel" class="model-container">
+        <div class="model">
+            <div class="model-header">
+                i am Header
+
+                <button onclick="hideSidebar()">
+                    Hide Sidebar
+                </button>
+            </div>
+            <div class="model-body">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aliquid possimus tempore maiores accusantium repellat ratione, cupiditate atque explicabo eum minima dolor enim eveniet! Architecto ducimus numquam explicabo qui illum.
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aliquid possimus tempore maiores accusantium repellat ratione, cupiditate atque explicabo eum minima dolor enim eveniet! Architecto ducimus numquam explicabo qui illum.
+                </div>
+
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, aliquid possimus tempore maiores accusantium repellat ratione, cupiditate atque explicabo eum minima dolor enim eveniet! Architecto ducimus numquam explicabo qui illum.
+                </div>            </div>
+            
+
+        <div class="model-bottom">
+            i am bottom
+            <button onclick="hideSidebar()">
+                Hide Sidebar
+            </button>
+        </div>
+        </div>
+
+    </dialog>
+
+    <button onclick="showSidebar()">
+        Show Sidebar
+    </button>
+</body>
+<script>
+    function showSidebar() {
+        document.getElementById('firstModel').style.display = 'block';
+    }
+    function hideSidebar() {
+        document.getElementById('firstModel').style.display = 'none';
+    }
+</script>
+
+</html>
