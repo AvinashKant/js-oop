@@ -16,8 +16,8 @@ Output: "56088"
 
 
 
-var multiply = function(num1, num2) {
-    if (num1 === "0" || num2 === "0") {
+var multiply = function (num1, num2) {
+  if (num1 === "0" || num2 === "0") {
     return "0";
   }
 
@@ -42,5 +42,5 @@ var multiply = function(num1, num2) {
     start++;
   }
 
-  return result.slice(start).join("");    
+  return result.slice(start).join("");
 };
