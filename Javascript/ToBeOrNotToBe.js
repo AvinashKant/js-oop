@@ -5,15 +5,23 @@
  * expect(5).toBe(5); // true
  * expect(5).notToBe(5); // throws "Equal"
  */
-var expect = function(value) {
+var expect = function (value) {
     return {
-        toBe : (param) => {
-            console.log(value + " tobe" + " "+ param)
+        toBe: (param) => {
+            if (value === param) {
+                return true;
+            } else {
+                throw new Error("Not Equal");
+            }
         },
-        notToBe : (param) => {
-            console.log(value + " notToBe")
+        notToBe: (param) => {
+            if (value !== param) {
+                return true;
+            } else {
+                throw new Error("Equal");
+            }
         }
-    }    
+    }
 };
 
 
