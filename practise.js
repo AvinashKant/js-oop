@@ -1,13 +1,4 @@
-/*const object  = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-        resolve("hi Mahesh");
-    },3000)
-})
 
-object.then((data)=>{
-    console.log(data);
-})
-*/
 class CustomPromise {
     constructor(executor) {
         this.state = "pending";
