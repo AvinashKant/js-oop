@@ -16,14 +16,14 @@
 dialog::backdrop {
     background-color: blue;
 }
-  
 
-.model-container>.model > .model-body {
+
+.model-container>.model>.model-body {
     max-height: 400px;
     overflow-y: scroll;
 }
 
-.model-container >.model >.model-bottom{
+.model-container>.model>.model-bottom {
     background-color: black;
     padding: 5px;
     bottom: 0;
