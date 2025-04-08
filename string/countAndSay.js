@@ -10,17 +10,13 @@
  */
 
 var countAndSay = function (n) {
-
     if (n === 1) {
         return "1";
     }
-
     let sequence = "1";
-
     for (let i = 2; i <= n; i++) {
         let nextSequence = "";
         let count = 1;
-
         for (let j = 0; j < sequence.length; j++) {
             if (j + 1 < sequence.length && sequence[j] === sequence[j + 1]) {
                 count++;
@@ -32,10 +28,7 @@ var countAndSay = function (n) {
         sequence = nextSequence;
     }
     return sequence;
-
 };
-
-
 
 console.log(countAndSay(1));
 console.log(countAndSay(2));
