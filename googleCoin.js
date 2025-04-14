@@ -25,7 +25,6 @@ function calculateSetAndMinCoin(amount) {
         console.log("minimumCoins = ", minimumCoins);
         console.log("Coins = ", setnumber);
     }
-
 }
 
 calculateSetAndMinCoin(16);
