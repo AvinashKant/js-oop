@@ -3,3 +3,40 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+.header_block {
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    z-index: 98;
+    position: fixed;
+}
+
+.header_block>.header-nav-bar {
+    right: 0px;
+    margin: 0 auto;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.header_block>.header-nav-bar>.nav-link {
+    padding: 5px 5px 5px 28px;
+    flex-direction: column;
+}
+
+.header_block>.header-nav-bar>.nav-link>a {
+    text-decoration: none;
+}
+
+.headerContent {
+    background-image: url(header.jpg);
+    max-height: 500px;
+}
+
+.headerContent>.headerBottom {
+    bottom: 0;
+    position: absolute;
+}

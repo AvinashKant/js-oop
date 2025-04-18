@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 .model-container {
     display: none;
     position: absolute;
@@ -12,17 +11,13 @@
     max-height: 500px;
     width: 80%;
 }
-
 dialog::backdrop {
     background-color: blue;
 }
-
-
 .model-container>.model>.model-body {
     max-height: 400px;
     overflow-y: scroll;
 }
-
 .model-container>.model>.model-bottom {
     background-color: black;
     padding: 5px;
