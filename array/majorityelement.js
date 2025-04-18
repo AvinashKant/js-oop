@@ -12,7 +12,6 @@ var majorityElement = function (nums) {
         if (freq == 0) {
             answer = nums[i];
         }
-
         if (answer == nums[i]) {
             freq++
         } else {
