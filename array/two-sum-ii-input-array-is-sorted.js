@@ -27,7 +27,6 @@ var twoSum = function (numbers, target) {
     let endIndex = numbers.length - 1;
     while (startIndex < endIndex) {
         const sum = numbers[startIndex] + numbers[endIndex];
-
         if (sum === target) {
             return [startIndex + 1, endIndex + 1];
         }

@@ -13,27 +13,27 @@
  *  Output: [0,0,9,0,0]
  */
 
- class Solution {
-
+class Solution
+{
     /**
      * @param Integer[] $nums
      * @return Integer[]
      */
-    function productExceptSelf($nums) {
+    function productExceptSelf($nums)
+    {
         $array = [];
-        for($i=0;$i<count($nums);$i++){
+        for ($i = 0; $i < count($nums); $i++) {
             $product = 1;
-            for($j=0;$j<count($nums);$j++){
-                if($i==$j) continue;
+            for ($j = 0; $j < count($nums); $j++) {
+                if ($i == $j) continue;
                 $product = $product * $nums[$j];
             }
             $array[] = $product;
-        }   
-        return $array;     
+        }
+        return $array;
     }
 }
 
 $obj = new Solution;
-print_r($obj->productExceptSelf([1,2,3,4])); //[24,12,8,6]
-print_r($obj->productExceptSelf([-1,1,0,-3,3])); //[0,0,9,0,0]
-?>
+print_r($obj->productExceptSelf([1, 2, 3, 4])); //[24,12,8,6]
+print_r($obj->productExceptSelf([-1, 1, 0, -3, 3])); //[0,0,9,0,0]
