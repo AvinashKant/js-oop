@@ -26,7 +26,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
  * @param {number[]} nums
  * @return {number}
  */
-var removeDuplicates = function(nums) {
+var removeDuplicates = function (nums) {
     if (nums.length === 0) {
         return 0;
     }
@@ -48,5 +48,5 @@ var removeDuplicates = function(nums) {
     return k;
 };
 
-console.log(singleNonDuplicate([1,1,2]));
-console.log(singleNonDuplicate([0,0,1,1,1,2,2,3,3,4]));
+console.log(singleNonDuplicate([1, 1, 2]));
+console.log(singleNonDuplicate([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));

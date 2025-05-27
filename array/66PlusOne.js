@@ -29,7 +29,7 @@ Incrementing by one gives 9 + 1 = 10.
 Thus, the result should be [1,0].
  */
 
-var plusOne = function(digits) {
+var plusOne = function (digits) {
     const n = digits.length;
     for (let i = n - 1; i >= 0; i--) {
         digits[i]++;
@@ -44,5 +44,5 @@ var plusOne = function(digits) {
     return digits;
 };
 
-console.log(plusOne([4,3,2,1]));
+console.log(plusOne([4, 3, 2, 1]));
 console.log(plusOne([9]));
