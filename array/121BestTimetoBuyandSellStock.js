@@ -19,9 +19,38 @@ Explanation: In this case, no transactions are done and the max profit = 0.
  * @returns 
  */
 
-var maxProfit = function(prices) {
-    
+var maxProfit = function (prices) {
+    let maxProfile = 0;
+
+    for (let i = 0; i < prices.length; i++) {
+        for (let j = i + 1; j < prices.length; j++) {
+            let profit = prices[j] - prices[i]; //1-7
+            //console.log("c= ",prices[i] , prices[j] , profit , maxProfile , profit)
+            if (prices[j] > prices[i] && profit && (profit > maxProfile)) {
+                maxProfile = profit;
+            }
+        }
+    }
+    return maxProfile;
 };
 
-console.log(maxProfit([7, 1, 5, 3, 6, 4]))
-console.log(maxProfit([7, 6, 4, 3, 1]))
+var maxProfit = function(prices) {
+    let minPrice = Infinity;  // Smallest price so far
+    let maxProfit = 0;        // Max profit found so far
+
+    for (let i = 0; i < prices.length; i++) {
+        const price = prices[i];
+
+        if (price < minPrice) {
+            minPrice = price;  // Update min if current price is lower
+        } else {
+            maxProfit = Math.max(maxProfit, price - minPrice);  // Update max profit
+        }
+    }
+    return maxProfit    
+};
+
+console.log(maxProfit([7, 1, 5, 3, 6, 4])) //5
+console.log(maxProfit([7, 6, 4, 3, 1])) //0
+console.log(maxProfit([1,2])) // 1
+   
