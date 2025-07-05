@@ -1,0 +1,49 @@
+
+
+
+
+
+/**
+body part
+*/
+
+
+.container {
+    padding: 0 100px;
+    margin-top: 70px;
+    /* margin: 0 auto; */
+}
+
+.foodtypes .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btnArrorw {
+    background-color: aqua;
+    border: none;
+    border-radius: 50%;
+    background: rgba(2, 6, 12, 0.15);
+    height: 34px;
+    padding: 8px 8px 4px;
+}
+
+.types {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #0f0f0f;
+}
+
+.types img {
+    width: 144px;
+    height: 180px;
+}
+
+/* 2137304770 */

@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /* background-color: #f0f0f0; */
+    /* Just for contrast */
+}
+
+.main-header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    /* Adjust height as needed */
+    /* position: relative; */
+    /* For the subtle border at the bottom */
+}
+
+/* Subtle border at the bottom, as seen in the image */
+.main-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Space between logo and dropdown */
+}
+
+.logo {
+    width: 40px;
+    /* Approximate width of the logo */
+    height: 40px;
+    /* Approximate height of the logo */
+    background-color: #fc8019;
+    /* Orange color from the logo */
+    border-radius: 50%;
+    /* Makes it a circle if the image is circular */
+    display: flex;
+    /* For centering a potential icon inside */
+    justify-content: center;
+    align-items: center;
+    /* If you have an image, replace background-color with: */
+    /* background-image: url('path/to/your/logo.png'); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+.location-dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    /* For the underline */
+}
+
+.location-dropdown::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    /* Adjust to position the underline */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    /* Color of the underline */
+}
+
+
+.dropdown-arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fc8019;
+    /* Orange arrow */
+    margin-left: 8px;
+    transform: translateY(2px);
+    /* Adjust to align with text */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    /* Space between navigation items */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Space between icon and text */
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #fc8019;
+    /* Hover effect */
+}
+
+.nav-links .icon {
+    font-size: 20px;
+    /* Adjust icon size */
+    /* If using Font Awesome, their defaults are usually good. */
+    /* For placeholder unicode icons, this helps. */
+}
+
+.offers-item a {
+    position: relative;
+    color: #fc8019;
+    /* Offers text is orange */
+    font-weight: 600;
+}
+
+.new-tag {
+    background-color: #fc8019;
+    /* Background color for 'NEW' tag */
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+    position: absolute;
+    top: -10px;
+    /* Adjust position relative to the 'Offers' text */
+    right: -25px;
+    /* Adjust position relative to the 'Offers' text */
+    white-space: nowrap;
+    /* Prevent "NEW" from wrapping */
+}
+
+/* Optional: For small screens, you might need a mobile menu setup */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 15px;
+        /* Reduce gap on smaller screens */
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .new-tag {
+        font-size: 8px;
+        top: -8px;
+        right: -20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .header-right {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: center;
+        /* Center the nav items */
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        /* Allow items to wrap */
+        justify-content: center;
+        gap: 10px 20px;
+        /* Row and column gap */
+    }
+
+    .location-dropdown::after {
+        width: 80%;
+        /* Adjust underline for wrapping */
+        left: 10%;
+    }
+}
+
+.container {
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.foodtypes .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btnArrorw {
+    background-color: aqua;
+    border: none;
+    border-radius: 50%;
+    background: rgba(2, 6, 12, 0.15);
+    height: 34px;
+    padding: 8px 8px 4px;
+}
+
+.types {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+    overflow-x: hidden;
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #0f0f0f;
+}
+
+.types img {
+    width: 144px;
+    height: 180px;
+}
