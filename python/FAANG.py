@@ -1,8 +1,6 @@
 # Flatten nested lists without loading everything in memory.
 # nested = [1, [2, [3, 4]], 5]
 
-
-
 # Peekable Generator
 class Peekable:
     def __init__(self, gen):
